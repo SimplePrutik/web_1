@@ -4,6 +4,9 @@ div {
   height: 50px;
   margin: 0; }
 
+h1 {
+  margin: 0; }
+
 input:focus, button:focus {
   outline: none; }
 
@@ -143,11 +146,13 @@ input:focus, button:focus {
     background: none;
     font-size: 23px;
     width: 35%;
-    margin-left: 10%; }
+    margin-left: 10%;
+    color: #86878b; }
     .social .text .header {
       font-family: "OpenSansBold";
       font-size: 27px;
-      display: block; }
+      display: block;
+      color: black; }
 
 .download {
   height: 750px;
@@ -181,7 +186,8 @@ input:focus, button:focus {
       font-family: "OpenSansBold"; }
     .download .description p {
       font-family: "OpenSansRegular";
-      font-size: 20px; }
+      font-size: 20px;
+      color: #86878b; }
     .download .description button {
       height: 60px;
       width: 170px;
@@ -227,7 +233,6 @@ input:focus, button:focus {
       margin: 0;
       padding: 0; }
       .sublist .right div img {
-        margin-top: 15px;
         margin-right: 30px;
         width: 50px;
         height: 50px; }
@@ -239,13 +244,91 @@ input:focus, button:focus {
           font-size: 18px; }
         .sublist .right div span p {
           font-family: "OpenSansRegular";
-          font-size: 18px; }
+          font-size: 18px;
+          color: #86878b; }
     .sublist .right p {
       font-family: "OpenSansRegular";
-      font-size: 20px; }
+      font-size: 20px;
+      color: #86878b; }
   .sublist div {
     background: none;
     height: 100%; }
+
+.standard {
+  height: 800px;
+  background-color: #f5f5f5;
+  display: flex; }
+  .standard div {
+    height: 100%;
+    background: none; }
+    .standard div h1 {
+      font-family: "OpenSansBold"; }
+      .standard div h1:after {
+        content: '';
+        display: block;
+        height: 3px;
+        width: 100px;
+        background-color: #ff8b38;
+        margin-top: 35px; }
+    .standard div p {
+      font-family: "OpenSansRegular";
+      font-size: 20px;
+      color: #86878b; }
+  .standard .right {
+    background: url("../img/feature3_city.png") no-repeat center center;
+    background-size: 750px;
+    align-items: center; }
+  .standard .left {
+    padding-left: 10%;
+    width: 70%;
+    padding-top: 150px; }
+
+.awesome {
+  height: 800px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .awesome span {
+    display: block;
+    margin-top: 100px;
+    text-align: center; }
+    .awesome span h1 {
+      font-family: "RalewayLight";
+      font-size: 50px; }
+      .awesome span h1:after {
+        content: '';
+        display: block;
+        height: 3px;
+        width: 80px;
+        background-color: #ff8b38;
+        margin: auto;
+        margin-top: 30px; }
+    .awesome span p {
+      font-family: "OpenSansRegular";
+      font-size: 20px;
+      color: #86878b; }
+  .awesome .reasons {
+    background: none;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    margin-top: 50px; }
+    .awesome .reasons .reason {
+      background: none;
+      height: 100%;
+      position: relative;
+      width: 25%;
+      margin: 0 5px; }
+      .awesome .reasons .reason span {
+        margin-top: 20px; }
+        .awesome .reasons .reason span h1 {
+          font-family: "OpenSansBold";
+          font-size: 30px; }
+      .awesome .reasons .reason img {
+        height: 90px;
+        width: 90px;
+        margin-left: calc(50% - 45px); }
 
 body {
   margin: 0;
@@ -257,11 +340,11 @@ a {
 
 @font-face {
   font-family: "OpenSansSemibold";
-  src: url("../fonts/2212.ttf"); }
+  src: url("../fonts/OpenSans-Semibold.ttf"); }
 
 @font-face {
   font-family: "OpenSansBold";
-  src: url("../fonts/2204.ttf"); }
+  src: url("../fonts/OpenSans-Bold.ttf"); }
 
 @font-face {
   font-family: "OpenSansRegular";

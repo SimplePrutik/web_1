@@ -4,6 +4,9 @@ div
     height: 50px;
     margin: 0;
 
+h1
+    margin: 0;
+
 input, button
     &:focus
         outline: none;
@@ -170,12 +173,14 @@ input, button
         font-size: 23px;
         width: 35%;
         margin-left: 10%;
+        color: #86878b;
 
 
         .header
             font-family: "OpenSansBold"
             font-size: 27px;
             display: block;
+            color: black;
 
 .download
     height: 750px; 
@@ -218,6 +223,7 @@ input, button
         p
             font-family: "OpenSansRegular"
             font-size: 20px;
+            color: #86878b;
 
         button
             height: 60px;
@@ -272,7 +278,6 @@ input, button
             padding: 0;
 
             img
-                margin-top: 15px;
                 margin-right: 30px;
                 width: 50px;
                 height: 50px;
@@ -289,14 +294,113 @@ input, button
                 p
                     font-family: "OpenSansRegular"
                     font-size: 18px;
+                    color: #86878b;
 
         p
             font-family: "OpenSansRegular"
             font-size: 20px;
+            color: #86878b;
 
     div
         background: none;
         height: 100%;
+
+.standard
+    height: 800px;
+    background-color: #f5f5f5;
+    display: flex;
+
+    div
+        height: 100%;
+        background: none;
+
+        h1
+            font-family: "OpenSansBold"
+
+            &:after
+                content: '';
+                display: block;
+                height: 3px;
+                width: 100px;
+                background-color: #ff8b38;
+                margin-top: 35px;
+
+        p
+            font-family: "OpenSansRegular"
+            font-size: 20px;
+            color: #86878b;
+
+    .right
+        background: url('../img/feature3_city.png') no - repeat center center;
+        background-size: 750px;
+        align-items: center;
+
+    .left
+        padding-left: 10%;
+        width: 70%;
+        padding-top: 150px;
+
+.awesome
+    height: 800px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    span
+        display: block;
+        margin-top: 100px;
+        text-align: center;
+
+        h1
+            font-family: "RalewayLight"
+            font-size: 50px;
+
+            &:after
+                content: '';
+                display: block;
+                height: 3px;
+                width: 80px;
+                background-color: #ff8b38;
+                margin: auto;
+                margin-top: 30px;
+
+        p
+            font-family: "OpenSansRegular"
+            font-size: 20px;
+            color: #86878b;
+
+    .reasons
+        background: none;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        margin-top: 50px;
+        
+        .reason
+            background: none;
+            height: 100%;
+            position: relative;
+            width: 25%;
+            margin: 0 5px;
+
+            span
+                margin-top: 20px;
+
+                h1
+                    font-family: "OpenSansBold"
+                    font-size: 30px;
+
+            img
+                height: 90px;
+                width: 90px;
+                margin-left: calc(50% - 45px);
+
+
+
+
+
+
 
 body
     margin: 0;
@@ -308,11 +412,11 @@ a
 
 @font-face 
     font-family: "OpenSansSemibold"; 
-    src: url('../fonts/2212.ttf');   
+    src: url('../fonts/OpenSans-Semibold.ttf');   
 
 @font-face 
     font-family: "OpenSansBold"; 
-    src: url('../fonts/2204.ttf'); 
+    src: url('../fonts/OpenSans-Bold.ttf'); 
 
 @font-face 
     font-family: "OpenSansRegular"; 
