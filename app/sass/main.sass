@@ -11,6 +11,32 @@ input, button
     &:focus
         outline: none;
 
+input, button
+    &:hover
+        cursor: pointer;
+
+
+span
+    display: block;
+
+    h1
+        font-family: "RalewayLight"
+        font-size: 50px;
+
+        &:after
+            content: '';
+            display: block;
+            height: 3px;
+            width: 80px;
+            background-color: #ff8b38;
+            margin-top: 30px;
+
+    p
+        font-family: "OpenSansRegular"
+        font-size: 20px;
+        color: #86878b;
+
+
 .menu 
     background-color: black;
     color: white ;
@@ -42,15 +68,30 @@ input, button
 
 .description
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/city_bg.jpg')
-    height: 800px;
+    height: 800px; 
+    display: flex;
+    justify-content: space-around; 
+    @media screen and (max-width: 1200px)
+        height: 100%;
+        padding-bottom: 5%;
+        flex-direction: column;
+        justify-content: center; 
     
+
     .left_info
-        float: left;
         width: 50%;
         background: none;
         padding: 0;
         margin-left: 10%;
-        margin-top: 50px;
+        margin-top: 5%;
+        height: 100%;
+        @media screen and (max-width: 1200px)
+            height: 1000px;
+            margin: 50px auto;
+
+        // > *
+        //     @media screen and (max-width: 1200px)
+        //         margin: auto;
 
 
         .logo
@@ -94,11 +135,8 @@ input, button
             font-family: "OpenSansSemibold"
             font-size: 18px;
 
-            &:hover
-                cursor: pointer;
 
     .signup
-        float: right;
         height: 500px;
         background-color: white;
         width: 25%;
@@ -109,6 +147,9 @@ input, button
         flex-direction: column;
         justify-content: space-between;
         flex-wrap: nowrap;
+        @media screen and (max-width: 1200px)
+            margin: 0 auto;
+            width: 40%;
 
         .header
             background-color: #f5f5f5;
@@ -119,6 +160,9 @@ input, button
             line-height: 70px;
             vertical-align: middle;
             border-radius: 6px;
+
+            span
+                display: inline;
 
 
             .orange
@@ -134,7 +178,7 @@ input, button
 
             .in
                 margin: 30px;
-                margin-left: 50px;
+                margin-left: 10%;
                 width: 75%;
                 border: 0;
                 padding: 5px;
@@ -183,10 +227,21 @@ input, button
             color: black;
 
 .download
-    height: 750px; 
+    height: 100%;
+    padding-top: 10%; 
+    padding-bottom: 10%; 
     background-color: #f5f5f5;  
     display: flex;
     align-items: center;
+    @media screen and (max-width: 1200px)
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            padding-bottom: 5%;
+
+    > *
+        @media screen and (max-width: 1200px)
+            margin: 20px 0px 20px 0px;
 
     div
         height: 100%;
@@ -196,8 +251,16 @@ input, button
 
     .tabs
         background: none;
+        padding: 0;
         padding-left: 10%;
-        width: 15%;
+        margin-right: -15%;
+        width: 100%;
+        @media screen and (max-width: 1200px)
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
 
         .tab
             background-color: #333333;   
@@ -214,8 +277,12 @@ input, button
        
     .description
         background: none;
+        padding: 0;
         padding-left: 0px;
-        width: 40%;
+        width: 100%;
+        display: block;
+        @media screen and (max-width: 1200px)
+            width: 40%;
 
         h1
             font-family: "OpenSansBold"
@@ -237,26 +304,39 @@ input, button
 
     .city
         background: none;
-        margin: auto;
+        padding: 0;
+        text-align: center;
+        width: 100%;
 
         img
             width: 400px;
 
 .sublist
-    height: 800px; 
+    height: 100%;
     background-color: white;  
     display: flex;
     margin: 0;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    @media screen and (max-width: 1200px)
+        flex-direction: column;
 
     .left
-        background: url('../img/feature2_city.png') no - repeat center center;
-        background-size: 750px;
-        align-items: center;
+        margin: auto;
+        text-align: center;
+
+            
+
     
     .right
-        padding-top: 120px;
         padding-right: 10%;
         width: 60%;
+        @media screen and (max-width: 1200px)
+            margin: auto;
+
+        .download
+            margin-top: 10px;
+            flex-direction: row;
 
         .main
             font-family: "OpenSansBold"
@@ -284,7 +364,6 @@ input, button
 
             span
                 width: 80%;
-                display: block;
 
                 
                 h1
@@ -292,9 +371,7 @@ input, button
                     font-size: 18px;
 
                 p
-                    font-family: "OpenSansRegular"
                     font-size: 18px;
-                    color: #86878b;
 
         p
             font-family: "OpenSansRegular"
@@ -305,10 +382,14 @@ input, button
         background: none;
         height: 100%;
 
+
+
 .standard
-    height: 800px;
     background-color: #f5f5f5;
     display: flex;
+    height: 100%;
+    @media screen and (max-width: 1200px)
+        flex-direction: column;
 
     div
         height: 100%;
@@ -331,9 +412,8 @@ input, button
             color: #86878b;
 
     .right
-        background: url('../img/feature3_city.png') no - repeat center center;
-        background-size: 750px;
-        align-items: center;
+        text-align: center;
+        height: 100%;
 
     .left
         padding-left: 10%;
@@ -343,13 +423,10 @@ input, button
 .awesome
     height: 800px;
     background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
     span
         display: block;
-        margin-top: 100px;
+        margin: 100px;
         text-align: center;
 
         h1
@@ -396,7 +473,104 @@ input, button
                 width: 90px;
                 margin-left: calc(50% - 45px);
 
+.price
+    height: 1100px;
+    background-color: #f5f5f5; 
+    padding-top: 100px;
 
+    span
+        display: block;
+        text-align: center;
+        background: none;
+
+        h1
+
+            &:after
+                margin: 30px auto;
+
+    .options
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        background: none;
+
+        .option
+            height: 100%;
+            background: none;
+            margin-top: 200px; 
+            align: center;
+            width: 500px;
+
+            .header
+                background-color: #333333;
+                color: white;
+                font-family: "OpenSansBold";
+                font-size: 25px;
+                text-align: center;
+                height: 70px;
+                width: 450px;
+                line-height: 70px;
+                vertical-align: middle;
+                margin: auto;
+
+            .price
+                height: 240px;
+                background-color: #333333; 
+                width: 450px;  
+                text-align: center; 
+                margin: auto;
+                margin-top: 1px;
+                font-family: "RalewayBold"
+                color: white;
+                font-size: 90px;
+                padding-top: 0;
+
+                span
+                    display: inline;
+                    font-size: 150px;
+
+                .desc
+                    font-family: "OpenSansSemiboldItalic"  
+                    font-size: 20px;
+                    color: #86878b;
+                    display: block;
+                    margin-bottom: 5px;
+
+            .bottom
+                height: 5px;
+                width: 450px;  
+                background-color: #ff8b38;
+                margin: auto;
+
+            ul
+                list-style-type: none;
+                width: 450px;
+                margin: auto;
+                padding: 0;
+
+                li
+                    text-align: center;
+                    font-family: "OpenSansRegular";
+                    color: #86878b;
+                    height: 50px;
+                    line-height: 50px;
+                    vertical-align: middle;
+                    background-color: white;
+                    margin-bottom: 1px;
+
+
+
+
+        .popular 
+            .header
+                margin-top: -40px;
+            .bottom
+                height: 45px;
+                text-align: center;
+                line-height: 45px;
+                vertical-align: middle;
+                color: white;
+                font-family: "OpenSansBold"
 
 
 
@@ -425,7 +599,16 @@ a
 @font-face 
     font-family: "RalewayRegular"; 
     src: url('../fonts/RalewayRegular.ttf');    
-    
+
 @font-face 
     font-family: "RalewayLight"; 
-    src: url('../fonts/RalewayLight.ttf');   
+    src: url('../fonts/RalewayLight.ttf'); 
+
+@font-face 
+    font-family: "RalewayBold"; 
+    src: url('../fonts/RalewayBold.ttf'); 
+
+@font-face 
+    font-family: "OpenSansSemiboldItalic"; 
+    src: url('../fonts/OpenSans-SemiboldItalic.ttf');     
+
