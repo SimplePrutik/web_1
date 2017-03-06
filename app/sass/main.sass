@@ -1,8 +1,4 @@
-div 
-    width: 100%;
-    background-color: grey;
-    height: 50px;
-    margin: 0;
+
 
 h1
     margin: 0;
@@ -11,7 +7,7 @@ input, button
     &:focus
         outline: none;
 
-input, button
+button
     &:hover
         cursor: pointer;
 
@@ -23,13 +19,6 @@ span
         font-family: "RalewayLight"
         font-size: 50px;
 
-        &:after
-            content: '';
-            display: block;
-            height: 3px;
-            width: 80px;
-            background-color: #ff8b38;
-            margin-top: 30px;
 
     p
         font-family: "OpenSansRegular"
@@ -68,9 +57,11 @@ span
 
 .description
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/city_bg.jpg')
-    height: 800px; 
+    height: 100%; 
     display: flex;
     justify-content: space-around; 
+    padding-top: 5%;
+    padding-bottom: 5%;
     @media screen and (max-width: 1200px)
         height: 100%;
         padding-bottom: 5%;
@@ -79,23 +70,25 @@ span
     
 
     .left_info
-        width: 50%;
+        width: 80%;
         background: none;
         padding: 0;
         margin-left: 10%;
-        margin-top: 5%;
+        margin-right: 5%;
         height: 100%;
         @media screen and (max-width: 1200px)
-            height: 1000px;
             margin: 50px auto;
 
-        // > *
-        //     @media screen and (max-width: 1200px)
-        //         margin: auto;
+        *
+            @media screen and (max-width: 1200px)
+                margin: auto;
+                text-align: center;
+                display: block;
+
+
 
 
         .logo
-            margin-top: 10%;
             width: 220px;
             height: 80px;
 
@@ -105,7 +98,7 @@ span
             font-size: 48px;
             display: block;
             margin-top: 20px;
-            width: 74%;
+            width: 100%;
             background: none;
 
             &:after
@@ -116,11 +109,16 @@ span
                 background-color: white;
                 margin-top: 40px;
                 margin-left: 7px;
+                @media screen and (max-width: 1200px)
+                    text-align: center;
+                    content: '';
+                    margin: 20px auto;
+
         .desc2
             font-family: "RalewayLight"
             color: white;
             display: block;
-            width: 80%;
+            width: 100%;
             font-size: 25px;
             margin-top: 40px;
             background: none;
@@ -139,9 +137,8 @@ span
     .signup
         height: 500px;
         background-color: white;
-        width: 25%;
-        margin-right: 10%;
-        margin-top: 200px;
+        width: 50%;
+        margin-right: 5%;
         border-radius: 6px;
         display: flex;
         flex-direction: column;
@@ -149,7 +146,7 @@ span
         flex-wrap: nowrap;
         @media screen and (max-width: 1200px)
             margin: 0 auto;
-            width: 40%;
+            width: 60%;
 
         .header
             background-color: #f5f5f5;
@@ -281,6 +278,7 @@ span
         padding-left: 0px;
         width: 100%;
         display: block;
+        text-align: center;
         @media screen and (max-width: 1200px)
             width: 40%;
 
@@ -321,6 +319,8 @@ span
     @media screen and (max-width: 1200px)
         flex-direction: column;
 
+
+
     .left
         margin: auto;
         text-align: center;
@@ -333,10 +333,9 @@ span
         width: 60%;
         @media screen and (max-width: 1200px)
             margin: auto;
+            padding: 0;
+            text-align: center;
 
-        .download
-            margin-top: 10px;
-            flex-direction: row;
 
         .main
             font-family: "OpenSansBold"
@@ -346,21 +345,28 @@ span
                 display: block;
                 height: 3px;
                 width: 100px;
-                background-color: #ff8b38;
                 margin-top: 35px;
+                background-color: #ff8b38;
+                @media screen and (max-width: 1200px)
+                    margin: 35px auto 0;
 
         div 
             width: 100%;
-            height: 150px;
             display: flex;
             align-items: flex-start;
             margin: 0;
             padding: 0;
+            @media screen and (max-width: 1200px)
+                flex-direction: column;
+                align-items: center;
 
             img
+                display: block;
                 margin-right: 30px;
                 width: 50px;
                 height: 50px;
+                @media screen and (max-width: 1200px)
+                    display: none;
 
             span
                 width: 80%;
@@ -368,7 +374,7 @@ span
                 
                 h1
                     font-family: "OpenSansBold"
-                    font-size: 18px;
+                    font-size: 18px;    
 
                 p
                     font-size: 18px;
@@ -390,6 +396,7 @@ span
     height: 100%;
     @media screen and (max-width: 1200px)
         flex-direction: column;
+        text-align: center;
 
     div
         height: 100%;
@@ -405,6 +412,8 @@ span
                 width: 100px;
                 background-color: #ff8b38;
                 margin-top: 35px;
+                @media screen and (max-width: 1200px) 
+                    margin: 35px auto 0;
 
         p
             font-family: "OpenSansRegular"
@@ -417,17 +426,21 @@ span
 
     .left
         padding-left: 10%;
-        width: 70%;
-        padding-top: 150px;
+        width: 100%;
+        padding-top: 5%;
+        @media screen and (max-width: 1200px)
+            padding: 0;
+            width: 50%;
+            margin:  5% auto;
 
 .awesome
-    height: 800px;
+    height: 100%;
     background-color: white;
 
-    span
+    .why
         display: block;
-        margin: 100px;
         text-align: center;
+        margin: 5% auto 5%;
 
         h1
             font-family: "RalewayLight"
@@ -453,30 +466,35 @@ span
         justify-content: center;
         height: 100%;
         margin-top: 50px;
+        margin-bottom: 5%;
         
         .reason
             background: none;
             height: 100%;
             position: relative;
-            width: 25%;
+            width: 27%;
             margin: 0 5px;
+            text-align: center;
 
             span
                 margin-top: 20px;
+                @media screen and (max-width: 1200px)
+                    text-align: center;
 
                 h1
                     font-family: "OpenSansBold"
                     font-size: 30px;
 
             img
+                display: block;
                 height: 90px;
                 width: 90px;
-                margin-left: calc(50% - 45px);
+                margin: auto;   
 
 .price
-    height: 1100px;
+    height: 100%;
     background-color: #f5f5f5; 
-    padding-top: 100px;
+    padding: 5% 0 5%;
 
     span
         display: block;
@@ -486,7 +504,13 @@ span
         h1
 
             &:after
-                margin: 30px auto;
+                content: '';
+                display: block;
+                height: 3px;
+                width: 80px;
+                background-color: #ff8b38;
+                margin: auto;
+                margin-top: 30px;
 
     .options
         height: 100%;
@@ -497,9 +521,9 @@ span
         .option
             height: 100%;
             background: none;
-            margin-top: 200px; 
+            margin: 10% 2% 0; 
             align: center;
-            width: 500px;
+            width: 25%;
 
             .header
                 background-color: #333333;
@@ -508,7 +532,6 @@ span
                 font-size: 25px;
                 text-align: center;
                 height: 70px;
-                width: 450px;
                 line-height: 70px;
                 vertical-align: middle;
                 margin: auto;
@@ -516,7 +539,6 @@ span
             .price
                 height: 240px;
                 background-color: #333333; 
-                width: 450px;  
                 text-align: center; 
                 margin: auto;
                 margin-top: 1px;
@@ -538,13 +560,11 @@ span
 
             .bottom
                 height: 5px;
-                width: 450px;  
                 background-color: #ff8b38;
                 margin: auto;
 
             ul
                 list-style-type: none;
-                width: 450px;
                 margin: auto;
                 padding: 0;
 
@@ -571,6 +591,77 @@ span
                 vertical-align: middle;
                 color: white;
                 font-family: "OpenSansBold"
+
+.customers
+    background-color: white;
+    height: 100%;
+
+    .header
+        margin: 5% auto 5%;
+
+        h1
+            font-family: "RalewayLight"
+            font-size: 50px;
+            text-align: center;
+
+            &:after
+                content: '';
+                display: block;
+                height: 3px;
+                width: 80px;
+                background-color: #ff8b38;
+                margin: auto;
+                margin-top: 30px;
+
+        p
+            font-family: "OpenSansRegular"
+            font-size: 20px;
+            color: #86878b;
+            text-align: center;
+
+    .feedback
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        padding-bottom: 5%;
+
+        .comment
+            width: 20%;
+            margin: 0 4%;
+
+            .words
+                font-family: "OpenSansItalic";
+                color: #86878b;
+                background-color: #f5f5f5;
+                font-size: 20px;
+                padding: 10% 5%;
+
+        .customer
+            margin-top: 5%;
+            display: flex;
+            justify-content: flex-start;
+
+            > *
+                margin-right: 3%;
+
+
+            img
+                display: block
+
+            h1
+                width: 100%;
+                font-family: "OpenSansBold"
+                font-size: 20px;
+                text-align: left;
+
+            p
+                font-size: 18px;
+                font-family: "OpenSansRegular"
+                color: #86878b;
+                margin: 2px 0px;
+
+
+
 
 
 
@@ -612,3 +703,7 @@ a
     font-family: "OpenSansSemiboldItalic"; 
     src: url('../fonts/OpenSans-SemiboldItalic.ttf');     
 
+
+@font-face 
+    font-family: "OpenSansItalic"; 
+    src: url('../fonts/OpenSans-Italic.ttf');  
