@@ -280,10 +280,12 @@
                 </div>
             </div>
         </div>
-        <button> Post comment </button> 
-        <input type="text" name="comment">
-        <input type="text" name="name">
-        <input type="text" name="job">
+        <div ng-app="myApp" ng-controller="PostReview">
+            <button ng-click="PostData()" id="post"> Post comment </button> 
+            <input type="text" ng-model="review" placeholder="comment here...">
+            <input type="text" ng-model="author" placeholder="your name">
+            <input type="text" ng-model="job" placeholder="your prof">
+        </div>
     </div>
 
     <div class='stylish'>
