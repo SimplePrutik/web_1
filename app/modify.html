@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head>
+    <script type="text/javascript" src="../js/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body>
+	<div >
+		<div ng-app="myApp" ng-controller="ChangeReview">
+            <button ng-click="GhangeData()" id="post"> Change </button> 
+            <input type="text" ng-model="id" placeholder="id">
+            <input type="text" ng-model="review" placeholder="comment here...">
+            <input type="text" ng-model="author" placeholder="your name">
+            <input type="text" ng-model="job" placeholder="your prof">
+            <a href="/"> Back </a>
+        </div>
+	</div>
+</body>
