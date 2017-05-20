@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel='stylesheet' href='css/main.css'>
-    <script src="https://unpkg.com/vue/dist/vue.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
 </head>
 <body ng-app="myApp">
@@ -237,13 +236,27 @@
         </div>
     </div> -->
 
-    <div ng-app="myApp" ng-controller="CustomersReviews" class='customers'>
+    <div ng-controller="CustomersReviews" class='customers'>
         <span class='header'>
             <h1>WHAT OUR CUSTOMERS ARE SAYING</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </span>
         <div class='feedback'>
-            <div class='comment'>
+
+            <div get-data ng-repeat='x in data track by $index' class='comment'>
+                <div class='words'>
+                    {{ comment[$index].review }}
+                </div>
+                <div class='customer'>
+                    <img src='img/boy.png'>
+                    <div>
+                        <h1>{{ comment[$index].author }}</h1>
+                        <p>{{ comment[$index].job }}</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class='comment'>
                 <div class='words'>
                     {{ review1 }}
                 </div>
@@ -278,18 +291,21 @@
                         <p>{{ job1 }}</p>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
-        <div ng-app="myApp" ng-controller="PostReview">
+
+        <!-- <div ng-app="myApp" ng-controller="PostReview">
             <button ng-click="PostData()" id="post"> Post comment </button> 
             <input type="text" ng-model="review" placeholder="comment here...">
             <input type="text" ng-model="author" placeholder="your name">
             <input type="text" ng-model="job" placeholder="your prof">
         </div>
+
         <div ng-app="myAppRoute">
-            <a href="/modify">Modify</a>
-            <ng-view></ng-view>
-        </div>
+            <a href="#modify">Modify</a>
+            <div ng-view></div>
+        </div> -->
+
     </div>
 
     <div class='stylish'>
